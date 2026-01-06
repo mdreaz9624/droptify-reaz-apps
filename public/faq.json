@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is DropTify?",
+    "answer": "DropTify is a smart rider and delivery management system designed for fast, secure and reliable parcel delivery."
+  },
+  {
+    "question": "How long does delivery take?",
+    "answer": "Delivery times vary based on location, but most deliveries are completed within 24 hours."
+  },
+  {
+    "question": "Do you offer Cash On Delivery?",
+    "answer": "Yes, DropTify supports secure Cash On Delivery (COD) payments."
+  },
+  {
+    "question": "How can I track my parcel?",
+    "answer": "You can track your parcel in real-time using our tracking ID system."
+  },
+  {
+    "question": "Is DropTify available nationwide?",
+    "answer": "Yes, we offer delivery services in all major cities and expanding rapidly."
+  }
+]

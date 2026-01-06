@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Ahsan Reaz",
+    "feedback": "This service is amazing! Highly satisfied.",
+    "avatar": "/avatars/user1.png"
+  },
+  {
+    "name": "Sara Khan",
+    "feedback": "Very smooth experience. I love the UI!",
+    "avatar": "/avatars/user2.png"
+  },
+  {
+    "name": "John Doe",
+    "feedback": "Support team was very helpful. Recommended!",
+    "avatar": "/avatars/user3.png"
+  }
+]

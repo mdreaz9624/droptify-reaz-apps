@@ -1,0 +1,81 @@
+import amazon from "../../../assets/amazon.jpeg";
+import bkash from "../../../assets/bkash.jpg";
+import daraz from "../../../assets/daraz.png";
+import foodpanda from "../../../assets/foodpanda.png";
+import pathao from "../../../assets/Pathao.jpg";
+import eduassists from "../../../assets/eduassists.png";
+
+const SupportedCompanies = () => {
+  const companies = [
+    { name: "Amazon", logo: amazon },
+    { name: "Bkash", logo: bkash },
+    { name: "Daraz", logo: daraz },
+    { name: "Foodpanda", logo: foodpanda },
+    { name: "Pathao", logo: pathao },
+    { name: "EduAssists", logo: eduassists },
+  ];
+
+  return (
+    <section className="py-14 bg-base-100 overflow-hidden">
+      <div className="text-center mb-10">
+        <h2 className="text-3xl font-bold text-primary">
+          Supported Companies
+        </h2>
+        <p className="text-base-content text-lg mt-2">
+          Trusted by top brands & businesses across the country.
+        </p>
+      </div>
+
+      {/* Marquee Wrapper */}
+      <div className="relative overflow-hidden w-full">
+        <div
+          className="
+            flex gap-12 px-6
+            w-max
+            animate-[scroll_40s_linear_infinite]
+            hover:[animation-play-state:paused]
+          "
+        >
+          {[...companies, ...companies].map((item, index) => (
+            <div
+              key={index}
+              className="
+                flex items-center justify-center
+                bg-base-200
+                rounded-xl shadow
+                w-40 h-24
+                p-4
+                flex-shrink-0
+              "
+            >
+              <img
+                src={item.logo}
+                alt={item.name}
+                className="
+                  max-h-12
+                  max-w-[120px]
+                  object-contain
+                  grayscale
+                  hover:grayscale-0
+                  transition duration-300
+                "
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Inline Tailwind keyframes */}
+      <style>
+        {`
+          @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+        `}
+      </style>
+    </section>
+  );
+};
+
+export default SupportedCompanies;
